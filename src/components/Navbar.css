@@ -1,0 +1,22 @@
+.setting-menu{
+    width: 150px;
+    padding: 5px;
+    font-weight: bolder;
+}
+.setting-menu div{
+    cursor: pointer;
+}
+.aside{
+    position: fixed;
+    width: fit-content;
+    height: 100%;
+    right: -100%;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(244, 247, 235);
+    transition: right 0.5s ease;
+    padding: 2%;
+}
+.aside.show{
+    right: 0px;
+}

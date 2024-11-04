@@ -1,0 +1,72 @@
+/* General layout */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .dashboard-content {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .dashboard-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .dashboard-widgets {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .widget {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    flex-grow: 1;
+  }
+  
+  .widget h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .widget p {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    /* For tablets and smaller screens */
+    .dashboard-content {
+      padding: 10px;
+    }
+  
+    .dashboard-widgets {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* For mobile phones */
+    .widget {
+      width: 100%;
+      margin-bottom: 10px; /* Full width widgets on mobile */
+    }
+  
+    .dashboard-widgets {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.footer{
+    padding: 5rem 0;
+}
+.ico-bg{
+    width: 40px;
+}
+.questions{
+    gap: 2rem;
+}
+
+.foot-head{
+    font-size: 18px;
+    font-weight: 700;
+}
+.about-para{
+    color: whitesmoke;
+}
